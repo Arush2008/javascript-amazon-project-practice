@@ -1,4 +1,8 @@
-    let productsHTML = '';
+import {cart as myCart} from '../data/cart.js';
+
+const cart = [];
+
+let productsHTML = '';
 
 products.forEach ((product) => {
     productsHTML += `
@@ -86,5 +90,5 @@ document.querySelectorAll('.js-add-to-cart')
 
             document.querySelector('.js-cart-quantity')
                 .innerHTML = cartQuantity;
-        });
+            });    
     });
